@@ -1,0 +1,63 @@
+{
+  "app_name": "所见",
+  "bundle_id": "com.yourcompany.pphoto",
+  "version": "1.0",
+  "platform": "iOS",
+  "encryption_type": "standard_only",
+  "encryption_technologies": [
+    {
+      "name": "HTTPS/SSL/TLS",
+      "purpose": "网络通信安全",
+      "algorithm": "标准SSL/TLS协议",
+      "key_length": "128位或更高",
+      "usage": [
+        "应用内购买验证",
+        "用户数据同步",
+        "远程服务调用"
+      ]
+    },
+    {
+      "name": "iOS系统加密API",
+      "purpose": "本地数据保护",
+      "algorithm": "iOS系统提供的标准加密API",
+      "usage": [
+        "钥匙串访问",
+        "用户偏好设置保护",
+        "临时数据加密"
+      ]
+    },
+    {
+      "name": "钥匙串服务",
+      "purpose": "敏感数据存储",
+      "encryption_method": "iOS系统级加密",
+      "usage": [
+        "用户认证信息存储",
+        "应用配置数据保护"
+      ]
+    }
+  ],
+  "encryption_purposes": [
+    "数据安全",
+    "通信安全",
+    "合规要求"
+  ],
+  "compliance": [
+    "符合App Store审核指南",
+    "符合隐私保护法规",
+    "符合数据安全标准"
+  ],
+  "export_compliance": {
+    "uses_standard_encryption": true,
+    "no_custom_encryption": true,
+    "no_military_use": true,
+    "no_nuclear_use": true,
+    "no_chemical_weapons_use": true
+  },
+  "app_store_connect_settings": {
+    "encryption_usage": "仅使用标准加密",
+    "encryption_declaration": "不包含自定义加密",
+    "export_compliance": "符合美国出口管制法规"
+  },
+  "generated_date": "2025-08-31T19:55:14.790828",
+  "version_info": "v1.0"
+}
